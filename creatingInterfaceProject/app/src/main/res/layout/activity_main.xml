@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- LinearLayout yan yana ve ya alt alta dizmek istediğimiz yapıları kullanbildiğimiz bir çerçeve ama esnek değil-->
+<!-- margin alttan üstten her yerden boşluk bırakır-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="20dp"
+    >
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="örnek button2"
+        android:textColor="#701414"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        ></Button>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="test test test"
+        android:textAlignment="center"
+        android:textSize="20sp"></TextView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="örnek button"
+        android:textColor="#701414"
+        android:textSize="20sp"
+
+
+        ></Button>
+
+    <!--Grid Layout-->
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/image" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/image" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/image" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</LinearLayout>
+
+    <!-- textlerde size için dp değil de sp kullanırız ve yine faklı boyutlarda kendini ayarlar-->
